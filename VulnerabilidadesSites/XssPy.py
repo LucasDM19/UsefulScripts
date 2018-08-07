@@ -1,4 +1,4 @@
-import mechanize
+import mechanize #pip2 install mechanize - apenas Python2
 import sys
 import http.client
 import argparse
