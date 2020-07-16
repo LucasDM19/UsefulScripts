@@ -4,6 +4,6 @@ Artigo: https://medium.com/@ageitgey/quick-tip-the-easiest-way-to-grab-data-out-
 
 import pandas as pd
 
-tables = pd.read_html("https://apps.sandiego.gov/sdfiredispatch/")
+calls_df, = pd.read_html("http://apps.sandiego.gov/sdfiredispatch/", header=0, parse_dates=["Call Date"])
 
-print(tables[0])
+print(calls_df)
